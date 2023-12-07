@@ -10,17 +10,9 @@ for (int i=0; i<N;i++){
     }
     Console.WriteLine();
 }
-int temp;
-Console.WriteLine();
-for (int i=0; i<N;i++){
-    temp = mas[0,i];
-    mas[0,i] = mas[M-1,i];
-    mas[M-1,i] = temp;
-}
-for (int i=0; i<N;i++){
-    for(int j=0;j<M;j++){
-        Console.Write($"{mas[i,j]}\t");
-    }
-    Console.WriteLine();
-}
+Console.Write("Введите номер столбика: ");
+int num_2 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите номер строки: ");
+int num_1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine($"\n Значение элемента: {mas[num_1-1,num_2-1]}");
 
